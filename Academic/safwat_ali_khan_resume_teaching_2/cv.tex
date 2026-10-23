@@ -1,0 +1,109 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.72in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx,array,enumitem,titlesec,hyperref,fontawesome5}
+\usepackage[default]{opensans}
+\usepackage{microtype}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks=true,urlcolor=linkcolour,linkcolor=linkcolour}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+\newcommand{\entry}[3]{\textbf{#1}\hfill\textit{#2}\\#3\par}
+\newcommand{\pub}[2]{\item #1 \textit{#2}}
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+{\LARGE\bfseries Safwat Ali Khan}\\[4pt]
+\href{https://github.com/safwatalikhan}{\faGithub\ GitHub}\quad$|$\quad
+\href{https://linkedin.com/in/safwatalikhan/}{\faLinkedin\ LinkedIn}\quad$|$\quad
+\href{https://safwatalikhan.com}{\faGlobe\ Website}\quad$|$\quad
+\href{mailto:safwatalikhan@gmail.com}{\faEnvelope\ Email}\quad$|$\quad
+571-789-9371
+\end{center}
+\vspace{-9pt}
+\section{Research Profile}
+Ph.D. candidate in Computer Science at George Mason University, advised by Dr. Kevin Moran, specializing in AI for software engineering, automated software testing, accessibility, and program repair. Develops reproducible benchmarks and evaluation methods for AI coding agents, with research spanning empirical software engineering, multimodal UI understanding, and mobile application testing. Previously worked in software quality assurance across healthcare and enterprise applications.
+
+\section{Education}
+\textbf{Ph.D. in Computer Science}, George Mason University, Fairfax, VA \hfill \textit{Spring 2027 (expected)}\\
+\textbf{M.S. in Computer Science}, George Mason University, Fairfax, VA \hfill 2025\\
+\textbf{B.S. in Computer Science}, University of Dhaka, Dhaka, Bangladesh \hfill 2014
+
+\section{Research Experience}
+\textbf{Graduate Research Assistant}, George Mason University \hfill \textit{Jan 2022--Present}
+\begin{itemize}
+\item \textbf{Accessibility repair benchmark and AI agent evaluation (2026):} Curated 250 user-facing accessibility fixes from 327 GitHub pull requests spanning 73 open-source applications; developed a taxonomy of 19 issue types and a reproducible benchmark of 50 repair tasks across 15 applications.
+\item Built per-task buggy and fixed environments using Docker and developed behavioral regression tests with Playwright and pytest. Evaluated Codex, Claude, and Qwen on defect localization and repair correctness, including file-, method-, and line-level analyses and a taxonomy of unsuccessful repairs.
+\item \textbf{AURORA (ICST 2024):} Developed a neural screen-understanding approach to identify and navigate difficult UI states during automated Android application exploration; improved code coverage by 19.6\% across 17 Android applications.
+\item Contributed to empirical studies of software testing practices and retrieval-based bug localization, including analyses of open-source IoT platforms and GUI interaction data.
+\end{itemize}
+
+
+\section{Publications}
+
+\begin{itemize}[leftmargin=1em, itemsep=6pt]
+
+\item \textbf{How do Accessibility Issues Get Fixed? A Large-Scale Study and Benchmark for Software Engineering Agents.}\\
+\textbf{Safwat Ali Khan}, Atish Kumar Dipankar, Hasan Mansur, Emma Tan, Christopher Vendome, Kevin Moran.\\
+\textit{Submitted, 2026.}
+
+\item \textbf{Characterizing Creativity in Data Visualization: Reflections and Future Directions.}\\
+Tianwei Ma, Zinat Ara, \textbf{Safwat Ali Khan}, Fanny Chevalier, Niklas Elmqvist, Naimul Hoque.\\
+\textit{Submitted, 2026.}
+
+\item \textbf{Advancing Mobile UI Testing by Learning Screen Usage Semantics.}\\
+\textbf{Safwat Ali Khan}.\\
+\href{https://ieeexplore.ieee.org/document/10988951}{\textit{ICST 2025, Doctoral Symposium.}}
+
+\item \textbf{Testing Practices, Challenges, and Developer Perspectives in Open-Source IoT Platforms.}\\
+Daniel Rodriguez-Cardenas, \textbf{Safwat Ali Khan}, Prianka Mandal, Adwait Nadkarni, Kevin Moran, Denys Poshyvanyk.\\
+\href{https://ieeexplore.ieee.org/document/10988986}{\textit{ICST 2025.}}
+
+\item \textbf{AURORA: Navigating UI Tarpits via Automated Neural Screen Understanding.}\\
+\textbf{Safwat Ali Khan}, Wenyu Wang, Yiran Ren, Bin Zhu, Jiangfan Shi, Alyssa McGowan, Wing Lam, Kevin Moran.\\
+\href{https://ieeexplore.ieee.org/document/10638617}{\textit{ICST 2024.}}
+
+\item \textbf{On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization.}\\
+Junayed Mahmud, Nadeeshan De Silva, \textbf{Safwat Ali Khan}, Seyed Hooman Mostafavi, S. M. Hasan Mansur, Oscar Chaparro, Andrian Marcus, Kevin Moran.\\
+\href{https://dl.acm.org/doi/10.1145/3597503.3608139}{\textit{ICSE 2023.}}
+
+\item \textbf{AVGUST: Automating Usage-based Test Generation from Videos of App Executions.}\\
+Yixue Zhao, Saghar Talebipour, Kesina Baral, Hyojae Park, Leon Yee, \textbf{Safwat Ali Khan}, Yuriy Brun, Nenad Medvidovic, Kevin Moran.\\
+\href{https://dl.acm.org/doi/10.1145/3540250.3549134}{\textit{ESEC/FSE 2022.}}
+
+\end{itemize}
+
+
+\section{Technical Skills}
+\textbf{Programming and development:} Python, Java, JavaScript, C++, Git/GitHub, Linux/Ubuntu, Docker, Android/ADB\\
+\textbf{AI and information retrieval:} LLMs and coding agents (GPT, Claude, Qwen, Codex), vision-language models, prompting, TF-IDF, BM25, LSI, embeddings, Transformers, CLIP\\
+\textbf{Software quality and program analysis:} Automated program repair, accessibility testing, regression testing, defect localization, UI test automation, trace analysis, test-oracle design\\
+\textbf{Tools and data:} Playwright, pytest, Selenium WebDriver, UIAutomator, APE, Monkey, DroidBot, JMeter, OpenCV, Tesseract, pandas, BeautifulSoup, REST APIs, JSON/CSV
+
+\section{Teaching and Mentoring}
+\textbf{Graduate Teaching Assistant}, George Mason University \hfill \textit{Sep 2019--Dec 2021; Fall 2026}
+\begin{itemize}
+\item Supported undergraduate courses in programming, data structures, and related computing topics through labs, office hours, grading, and individual student guidance; assigned to CS 477 in Fall 2026.
+\end{itemize}
+\textbf{Research Mentorship}, George Mason University \hfill \textit{2020--2022}
+\begin{itemize}
+\item Mentored Stuti Gupta and Somasekhar Patil (ASSIP 2020) on \textit{``Editable AI: Mixed Human-AI Authoring of Visual Design Styles.''}
+\item Supervised Alyssa McGowan (ASSIP 2022) on \textit{``Classification of UI Screens Based on Design Motif,''} guiding research design, implementation, evaluation, and presentation.
+\end{itemize}
+
+\section{Industry Experience}
+\textbf{SQA Engineer II}, Therap Services Ltd. \hfill \textit{Jan 2018--Jul 2019}\\
+Tested HIPAA-compliant healthcare web applications and developed automated tests for health-tracking modules.\\
+\textbf{SQA Engineer}, Relisource Technologies Ltd. \hfill \textit{May 2015--Dec 2017}\\
+Performed functional and automated testing of enterprise software applications.\\
+\textbf{Jr. SQA Engineer}, mPower Social Enterprises Ltd. \hfill \textit{Aug 2014--Apr 2015}\\
+Tested mobile applications used by field healthcare workers.
+
+\section{Academic Service and Fellowships}
+\textbf{Reviewing:} IEEE Transactions on Software Engineering (2026); FSE (2024); ICSE (2023); SANER (2023); ASE (2022)\\
+\textbf{Service:} Student Volunteer, ICST 2024\\
+\textbf{Fellowships and awards:} Provost Research Fellowship (2026); Sustainability Summer Research Fellowship (2024); CS Research Initiation Award (2020)
+\end{document}

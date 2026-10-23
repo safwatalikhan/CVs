@@ -1,0 +1,179 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+
+
+% Title name
+\namesection{}{Safwat Ali Khan}{
+\email{\href{mailto:skhan89@gmu.edu}{Email}} \linkedin{\href{https://www.linkedin.com/in/safwatalikhan/}{LinkedIn}  \github{\href{https://github.com/safwatalikhan}{Github}} \myweb{\href{https://safwatalikhan.com}{Website}} }}
+
+% Column one
+\begin{minipage}[t]{0.30\textwidth} 
+
+% Education
+\cvsection{Education} 
+
+\subsection{George Mason University}
+\descript{PhD in Computer Science}
+\cvevent{Expected 2026}{}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+CGPA 3.88/4.00
+
+\sectionsep
+
+\subsection{University of Dhaka}
+\descript{BSc in Computer Science}
+\cvevent{2010-2014}{Bangladesh} 
+\sectionsep
+
+% Links
+
+% Coursework
+\cvsection{Graduate Courseworks} \\
+Software Testing\\
+Algorithm \\
+UI Design and Development\\
+Deep Learning \\
+Natural Language Processing \\
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+\subsection{Machine learning}
+Prompt Engineering \textbullet{} Fine-tuning LLMs
+\textbullet{} OpenCV \textbullet{} tensorflow \textbullet{} pyTorch \textbullet{} \\ CLiP \textbullet{} Transformer \\
+
+\subsection{Automation tool:}
+UIAutomator \textbullet{} Selenium webdriver \textbullet{} JMeter \textbullet{} Google Monkey \textbullet{} APE 
+
+\subsection{Languages}
+Python \textbullet{}   Java \textbullet{} C/C++ \textbullet{}\\ 
+JavaScript
+\sectionsep \\
+% Honors
+\cvsection{Research Talk}
+\subsection{Fraunhofer USA}
+\cvevent{Jan, 2023}{Maryland, USA}
+Leveraging Machine Learning to bypass Android UI tarpits \\
+\vspace{\topsep}
+\sectionsep 
+\subsection{ICST Doctoral Symposium}
+\cvevent{Apr, 2025}{Napoli, Italy}
+Advancing Mobile UI Testing by \\ Learning Screen Usage Symantics
+\sectionsep \\
+\cvsection{Mentorship} 
+\subsection{ASSIP 2020, 2022}
+Co-mentor for Aspired Scientist Summer Internship Program
+
+\cvsection{Service} 
+\subsection{Co-reviewer}
+FSE 2024, ICSE 2023, \\SANER 2023, ASE 2022
+\subsection{Student Volunteer}
+ICST 2024
+
+\sectionsep
+\sectionsep
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\cvsection{Research Publications}
+\vspace{\topsep} 
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+1. & ``AURORA: Navigating UI Tarpits via Automated Neural Screen Understanding'' — \textbf{Safwat Ali Khan}, Wenyu Wang, Yiran Ren, Bin Zhu, Jiangfan Shi, Wing Lam, Kevin Moran. In \href{https://ieeexplore.ieee.org/document/10638617}{ICST 2024}. \\[0.3em]
+
+2. & ``Testing Practices, Challenges, and Developer Perspectives in Open-Source IoT Platforms'' — Daniel Rodriguez-Cardenas, \textbf{Safwat Ali Khan}, Prianka Mandal, Adwait Nadkarni, Kevin Moran, Denys Poshyvanyk. In \href{https://conf.researchr.org/home/icst-2025}{ICST 2025}. \\[0.3em]
+
+3. & ``On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization'' — Junayed Mahmud, Nadeeshan De Silva, \textbf{Safwat Ali Khan}, Seyed Hooman Mostafavi, S M Hasan Mansur, Oscar Chaparro, Andrian Marcus, Kevin Moran. In \href{https://dl.acm.org/doi/10.1145/3597503.3608139}{ICSE 2023}. \\[0.3em]
+
+4. & ``AVGUST: Automating Usage-based Test Generation from Videos of App Executions'' — Yixue Zhao, Saghar Talebipour, Kesina Baral, Hyojae Park, Leon Yee, \textbf{Safwat Ali Khan}, Yuriy Brun, Nenad Medvidovic, Kevin Moran. In \href{https://dl.acm.org/doi/10.1145/3540250.3549134}{ESEC/FSE 2022}. \\
+\end{tabular}
+
+
+\cvsection{Current Projects} 
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}  
+• & Developing and evaluating techniques to analyze automated input generation traces to \textbf{detect use cases} in mobile UI testing. \\
+• & Identifying usability issues in mobile apps and \textbf{redesigning UIs} based on user needs to improve overall user experience. \\
+\end{tabular}
+\cvsection{Fellowship} 
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}  
+• & {CS Research Initiation Award} — 2020 \\
+• & {Sustainability Summer Research Fellowship} — 2024 \\
+\end{tabular}
+
+
+
+\cvsection{Work Experience}
+\sectionsep
+
+\subsection{Graduate Assistant}
+\descript{\href{https://www.gmu.edu/}{George Mason University}}
+\cvevent{Sep 2019 – Present}{Fairfax, VA, USA}
+Experience in academic research and teaching focusing software testing, data analysis, and program development.
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}  
+• & Conducting research on \textbf{automated mobile UI testing}, developing learning-based techniques to detect use cases from large-scale execution traces and analyzing limitations in smart home app testing. \\
+• & Designing and evaluating \textbf{IR and LLM-based methods} to identify user-facing use cases within automated exploration traces. \\
+• & Serving as a \textbf{Teaching Assistant}, mentoring students in Low-Level Programming (C, Java), Database Systems, and Data Structures courses. \\
+\end{tabular} \\
+\sectionsep
+
+
+\subsection{Industry Experience}
+
+\descript{\href{https://www.therapservices.net/}{Therap Services Ltd.}}
+\cvevent{Jan 2018 – Jul 2019}{Dhaka, Bangladesh}
+
+\descript{\href{https://www.relisource.com/}{Relisource Technologies Ltd.}}
+\cvevent{May 2015 – Dec 2017}{Dhaka, Bangladesh}
+
+\descript{\href{https://www.mpower-social.com/}{mPower Social Enterprises Ltd.}}
+\cvevent{Aug 2014 – Apr 2015}{Dhaka, Bangladesh}
+
+Software Quality Assurance Engineer with \textbf{5+ years of experience} in manual and automated testing of web and mobile applications, contributing to large-scale systems across diverse domains.
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}  
+• & Supported projects delivering digital solutions for underserved populations in Bangladesh. \\
+• & Worked on web-based learning platforms for healthcare professionals and health tracking modules for developmentally disabled individuals. \\
+\end{tabular}
+
+\vspace{\topsep}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  
