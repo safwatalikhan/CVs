@@ -45,7 +45,7 @@
 \RequirePackage{setspace}
 % Use icons from font-awesome
 \usepackage[default]{lato}
-\RequirePackage{fontawesome5}
+% \RequirePackage{fontawesome5} % disabled: conflicts with v4 fontawesome loaded below (all icons used are v4-style)
 \RequirePackage{roboto}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID

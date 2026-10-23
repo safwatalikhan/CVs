@@ -1,0 +1,197 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Tighten vertical spacing so the added content stays on a single page
+\renewcommand{\sectionsep}{\vspace{2pt}}
+\renewcommand{\acvSectionTopSkip}{1mm}
+\renewcommand{\acvSectionContentTopSkip}{0.5mm}
+
+% Slightly smaller name header to reclaim vertical space at the top
+\renewcommand{\namesection}[3]{%
+\centering{%
+\fontsize{32pt}{40pt}%
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 %
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2%
+} \\[4pt]%
+\centering{%
+\color{headings}%
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}%
+\vspace{-15pt}%
+}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+
+
+% Title name
+\namesection{}{Safwat Ali Khan}{
+\email{\href{mailto:skhan89@gmu.edu}{Email}} \linkedin{\href{https://www.linkedin.com/in/safwatalikhan/}{LinkedIn}  \github{\href{https://github.com/safwatalikhan}{Github}} \myweb{\href{https://safwatalikhan.com}{Website}} }}
+
+% Column one
+\begin{minipage}[t]{0.30\textwidth}
+
+% Education
+\cvsection{Education}
+
+\subsection{George Mason University}
+\descript{PhD in Computer Science}
+\cvevent{Expected 2026}{}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+CGPA 3.88/4.00
+
+\sectionsep
+
+\subsection{University of Dhaka}
+\descript{BSc in Computer Science}
+\cvevent{2010-2014}{Bangladesh}
+\sectionsep
+
+% Links
+
+% Coursework
+\cvsection{Graduate Courseworks} \\
+Software Testing \textbullet{} Algorithms \textbullet{} UI Design \& Development \textbullet{} Deep Learning \textbullet{} Natural Language Processing
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+\subsection{Machine learning}
+Prompt Engineering \textbullet{} Fine-tuning LLMs \textbullet{} Deep Learning \textbullet{} Computer Vision \textbullet{} NLP \textbullet{} Information Retrieval
+\textbullet{} OpenCV \textbullet{} tensorflow \textbullet{} pyTorch \textbullet{} CLiP \textbullet{} Transformer \\
+
+\subsection{Automation tool:}
+UIAutomator \textbullet{} Selenium webdriver \textbullet{} JMeter \textbullet{} Google Monkey \textbullet{} APE
+
+\subsection{Core Expertise}
+GUI/UI Testing \textbullet{} Test Automation \textbullet{} Performance Testing \textbullet{} Automated Program Repair \textbullet{} Empirical Studies \textbullet{} Static \& Dynamic Analysis
+
+\subsection{Languages}
+Python \textbullet{} Java \textbullet{} C/C++ \textbullet{} JavaScript
+\sectionsep \\
+% Honors
+\cvsection{Research Talk}
+\subsection{ICST Doctoral Symposium}
+\cvevent{Apr, 2025}{Napoli, Italy}
+Advancing Mobile UI Testing by \\ Learning Screen Usage Symantics \\
+\vspace{\topsep}
+\sectionsep
+\subsection{Fraunhofer USA}
+\cvevent{Jan, 2023}{Maryland, USA}
+Leveraging Machine Learning to bypass Android UI tarpits
+\sectionsep \\
+\cvsection{Mentorship}
+\subsection{ASSIP 2022, 2020}
+Co-mentor for Aspired Scientist Summer Internship Program
+
+\cvsection{Service}
+\subsection{Journal Reviewer}
+IEEE Trans. on Software \\Engineering (TSE) 2026
+\subsection{Co-reviewer}
+FSE 2024, ICSE 2023, \\SANER 2023, ASE 2022
+\subsection{Student Volunteer}
+ICST 2024
+
+\sectionsep
+% Column two
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+\cvsection{Research Publications}
+\vspace{\topsep}
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+1. & ``Testing Practices, Challenges, and Developer Perspectives in Open-Source IoT Platforms'' — Daniel Rodriguez-Cardenas, \textbf{Safwat Ali Khan}, Prianka Mandal, Adwait Nadkarni, Kevin Moran, Denys Poshyvanyk. In \href{https://conf.researchr.org/home/icst-2025}{ICST 2025}. \\[0.3em]
+
+2. & ``AURORA: Navigating UI Tarpits via Automated Neural Screen Understanding'' — \textbf{Safwat Ali Khan}, Wenyu Wang, Yiran Ren, Bin Zhu, Jiangfan Shi, Wing Lam, Kevin Moran. In \href{https://ieeexplore.ieee.org/document/10638617}{ICST 2024}. \\[0.3em]
+
+3. & ``On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization'' — Junayed Mahmud, Nadeeshan De Silva, \textbf{Safwat Ali Khan}, Seyed Hooman Mostafavi, S M Hasan Mansur, Oscar Chaparro, Andrian Marcus, Kevin Moran. In \href{https://dl.acm.org/doi/10.1145/3597503.3608139}{ICSE 2023}. \\[0.3em]
+
+4. & ``AVGUST: Automating Usage-based Test Generation from Videos of App Executions'' — Yixue Zhao, Saghar Talebipour, Kesina Baral, Hyojae Park, Leon Yee, \textbf{Safwat Ali Khan}, Yuriy Brun, Nenad Medvidovic, Kevin Moran. In \href{https://dl.acm.org/doi/10.1145/3540250.3549134}{ESEC/FSE 2022}. \\
+\end{tabular}
+
+
+\cvsection{Current Projects}
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+• & Building a \textbf{benchmark for automated program repair} of accessibility defects in software (manuscript \textbf{under review}). \\
+• & Conducting a \textbf{systematic literature review} of developer-facing accessibility tools, surveying guidelines, techniques, target populations, and evaluation methods across the SE lifecycle. \\
+\end{tabular}
+\cvsection{Fellowship}
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+• & {Provost Scholarship} — 2026 \\
+• & {Sustainability Summer Research Fellowship} — 2024 \\
+• & {CS Research Initiation Award} — 2020 \\
+\end{tabular}
+
+
+
+\cvsection{Work Experience}
+\sectionsep
+
+\subsection{Graduate Assistant}
+\descript{\href{https://www.gmu.edu/}{George Mason University}}
+\cvevent{Sep 2019 – Present}{Fairfax, VA, USA}
+Experience in academic research and teaching focusing software testing, data analysis, and program development.
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+• & Conducting research on \textbf{automated mobile UI testing}, developing learning-based techniques to analyze large-scale execution traces and investigating limitations in smart home app testing. \\
+• & Advancing \textbf{software accessibility} research, including the automated program repair of accessibility defects and a systematic review of developer-facing accessibility tooling. \\
+• & Serving as a \textbf{Teaching Assistant}, mentoring students in Low-Level Programming (C, Java), Database Systems, and Data Structures courses. \\
+\end{tabular} \\
+\sectionsep
+
+
+\subsection{Industry Experience}
+
+\descript{\href{https://www.therapservices.net/}{Therap Services Ltd.}}
+\cvevent{Jan 2018 – Jul 2019}{Dhaka, Bangladesh}
+
+\descript{\href{https://www.relisource.com/}{Relisource Technologies Ltd.}}
+\cvevent{May 2015 – Dec 2017}{Dhaka, Bangladesh}
+
+\descript{\href{https://www.mpower-social.com/}{mPower Social Enterprises Ltd.}}
+\cvevent{Aug 2014 – Apr 2015}{Dhaka, Bangladesh}
+
+Software Quality Assurance Engineer with \textbf{5+ years of experience} in manual and automated testing of web and mobile applications, contributing to large-scale systems across diverse domains.
+
+\begin{tabular}{@{}p{0.02cm}p{11cm}@{}}
+• & Supported projects delivering digital solutions for underserved populations in Bangladesh. \\
+• & Worked on web-based learning platforms for healthcare professionals and health tracking modules for developmentally disabled individuals. \\
+\end{tabular}
+
+\vspace{\topsep}
+\sectionsep
+
+
+\end{minipage}
+\end{document}
