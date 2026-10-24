@@ -3,7 +3,19 @@
     "allow": [
       "Bash(pdfinfo *)",
       "Bash(pdftotext *)",
-      "Bash(kpsewhich *)"
+      "Bash(kpsewhich *)",
+      "Bash(pdflatex *)",
+      "Bash(xelatex *)",
+      "Bash(lualatex *)",
+      "Bash(latexmk *)",
+      "Bash(bibtex *)",
+      "Bash(biber *)",
+      "Bash(pdftoppm *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
     ]
   }
 }
