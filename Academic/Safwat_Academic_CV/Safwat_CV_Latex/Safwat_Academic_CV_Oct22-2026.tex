@@ -178,8 +178,20 @@ Test Automation Tools: & Selenium Webdriver, JMeter, UIAutomator, Google Monkey,
 %----------------------------------------------------------------------------------------
 % REFERENCES SECTION
 %----------------------------------------------------------------------------------------
+% Locally loosen item spacing so reference lines don't crowd together
+{
+\renewenvironment{rSubsection}[4]{%
+ {\bf #1} \hfill {#2}%
+ \ifthenelse{\equal{#3}{}}{}{\\{\em #3} \hfill {\em #4}}\smallskip
+ \begin{list}{$\cdot$}{\leftmargin=0em}%
+  \itemsep 0.12em%
+ }{%
+ \end{list}%
+ \vspace{3pt}%
+}
 \begin{rSection}{References}
 
+\begin{minipage}[t]{0.48\textwidth}
 \begin{rSubsection}{Dr. Kevin Moran}{}{}{}
 \item Assistant Professor of Computer Science
 \item University of Central Florida
@@ -191,7 +203,23 @@ Test Automation Tools: & Selenium Webdriver, JMeter, UIAutomator, Google Monkey,
 \item George Mason University
 \item Email: \MYhref{mailto:winglam@gmu.edu}{winglam@gmu.edu}
 \end{rSubsection}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{rSubsection}{Dr. Andrian Marcus}{}{}{}
+\item Professor of Computer Science
+\item George Mason University
+\item Email: \MYhref{mailto:amarcus7@gmu.edu}{amarcus7@gmu.edu}
+\end{rSubsection}
+
+\begin{rSubsection}{Dr. Adwait Nadkarni}{}{}{}
+\item Associate Professor of Computer Science
+\item William \& Mary
+\item Email: \MYhref{mailto:apnadkarni@wm.edu}{apnadkarni@wm.edu}
+\end{rSubsection}
+\end{minipage}
 
 \end{rSection}
+}
 
 \end{document}
